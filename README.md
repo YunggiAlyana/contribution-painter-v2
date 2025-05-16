@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
+# 🎨 Contribution Painter v2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A visual tool to generate artistic patterns for your GitHub contribution graph — currently **under development**.
 
-Currently, two official plugins are available:
+## ⚠️ Status
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is actively being developed. Features and functionality are **not yet complete** and may change frequently.
 
-## Expanding the ESLint configuration
+## ✨ Planned Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🎯 Draw pixel art that maps directly to GitHub contribution dates
+- 🔁 Year shifting with offset-aware logic
+- 🎲 Randomizer mode for quick generative art
+- 🔄 Export/import presets as `.json`
+- 🖼️ Live preview of your contribution grid
+- 🔒 Community upload, starring, and downloads (with login)
+- ⌨️ Keyboard shortcuts (`R` for random, `Ctrl+Z` for undo, etc.)
+- 📤 Generate and push commits automatically to your GitHub repo
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🧱 Tech Stack (Planned)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- ⚡️ [Vite](https://vitejs.dev/)
+- ⚛️ [React](https://react.dev/)
+- 💨 [Tailwind CSS](https://tailwindcss.com/)
+- 🟦 [TypeScript](https://www.typescriptlang.org/)
+- 🐘 MySQL (via XAMPP) — backend data handling (planned)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started (Early Preview)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+```bash
+# clone the project
+git clone https://github.com/YunggiAlyana/contribution-painter.git
+
+# navigate into the folder
+cd contribution-painter-v2
+
+# install dependencies
+npm install
+
+# run dev server
+npm run dev
