@@ -29,7 +29,7 @@ This project is actively being developed. Features and functionality are **not y
 
 ```bash
 # clone the project
-git clone https://github.com/YunggiAlyana/contribution-painter.git
+git clone https://github.com/YunggiAlyana/contribution-painter-v2.git
 
 # navigate into the folder
 cd contribution-painter-v2
